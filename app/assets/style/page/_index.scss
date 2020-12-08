@@ -1,4 +1,20 @@
 .banner{
-    background: url('../images/index1.jpg') center/cover no-repeat;
-    height: 870px;
+    &-bg{
+        background: url('../images/index1.jpg') center/cover no-repeat;
+    }
+
+    &-h{
+        height: calc(100vh - 56px);
+    }
+}
+
+.custom-btn{
+    font-size: 28px;
+}
+
+.intro__img--md{
+    @include media-breakpoint-up(md){
+        width: 555px;
+        height: 555px;
+    }
 }
