@@ -1,7 +1,8 @@
 /* color */
 $primary:       #916019;
 $secondary:     #AC8A46;
-$white:       #fff;
+$white:       #ffffff;
+$black:       #000000;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;
 // $info:          $cyan !default;
@@ -30,6 +31,7 @@ $theme-colors: (
     "gray-100":   $gray-100, 
     "gray-300":   $gray-300, 
     "white":       $white,
+    "black":       $black,
 );
 
 
@@ -74,11 +76,16 @@ $spacers: (
     12: ($spacer * 2.25), // 36px
     13: ($spacer * 2.5), // 40px
     14: ($spacer * 3), // 48px
-    15: ($spacer * 3.5), // 56px
-    16: ($spacer * 3.75), // 60px
-    17: ($spacer * 5), // 80px
-    18: ($spacer * 7), // 112px
+    15: ($spacer * 3.25), // 52px
+    16: ($spacer * 3.5), // 56px
+    17: ($spacer * 3.75), // 60px
+    18: ($spacer * 5), // 80px
+    19: ($spacer * 7), // 112px
 );
+
+/* margin / padding */
+
+$headings-margin-bottom: 0;
 
 
 /* navbar */

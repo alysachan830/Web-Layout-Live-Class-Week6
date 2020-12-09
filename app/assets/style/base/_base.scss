@@ -24,7 +24,11 @@ a{
     }
 }
 
-ul{
+p{
+    margin: 0;
+}
+
+ul, ol{
     list-style: none;
     margin-bottom: 0;
     padding: 0;
