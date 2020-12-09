@@ -7,3 +7,39 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
+
+.navbar-toggler{
+    &:focus{
+        outline: none;        
+    }
+
+    &__wrap{
+        width: 20px;
+        height: 20px;
+    }
+
+    &__bar{
+        width: 34px;
+        height: 4px;
+        background: $gray-300;
+        transition: transform .6s;
+    }
+}
+
+
+.js-navbar-toggler__close{
+    &--left{
+        @extend .navbar-toggler__bar;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 8px;
+    }
+
+    &--right{
+        @extend .navbar-toggler__bar;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 8px;
+    }
+}

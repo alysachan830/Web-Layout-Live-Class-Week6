@@ -2,14 +2,21 @@ $(document).ready(() => {
   
   $(document).on('scroll', () => {
     if($(document).scrollTop() > 0){
-      $('#navbar').addClass('bg-gray-100')
-      $('#navbar').removeClass('bg-white')
+      $('.js-navbar-bg').addClass('bg-gray-100')
+      $('.js-navbar-bg').removeClass('bg-white')
     }
 
     else{
-      $('#navbar').addClass('bg-white')
-      $('#navbar').removeClass('bg-gray-100')
+      $('.js-navbar-bg').addClass('bg-white')
+      $('.js-navbar-bg').removeClass('bg-gray-100')
     }
 
   })
+
+  $('.js-navbar-toggler').on('click', () => {
+    $('.js-navbar-toggler__bar-middle').toggle();
+    $('.js-navbar-toggler__bar-top').toggleClass('js-navbar-toggler__close--left');
+    $('.js-navbar-toggler__bar-bottom').toggleClass('js-navbar-toggler__close--right');
+  })
+
 });

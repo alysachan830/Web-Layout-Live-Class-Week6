@@ -1,28 +1,39 @@
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+<nav class="navbar navbar-expand-lg navbar-light js-navbar-bg fixed-top bg-white">
   <div class="container">
     <h1>
       <a class="navbar-brand navbar__logo" href="#">D'Perfume</a>
     </h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="d-flex align-items-center">
+      <div class="d-lg-none position-relative mr-8">
+        <span class="material-icons text-gray-300">
+          shopping_cart
+        </span>
+        <span class="shopping-cart-quantity badge badge-pill badge-primary font-xs">3</span>
+      </div>
+      <button class="navbar-toggler js-navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">              
+          <div class="navbar-toggler__wrap position-relative">
+            <div class="js-navbar-toggler__bar-top navbar-toggler__bar mb-1 rounded-lg"></div>
+            <div class="js-navbar-toggler__bar-middle navbar-toggler__bar mb-1 rounded-lg"></div>
+            <div class="js-navbar-toggler__bar-bottom navbar-toggler__bar rounded-lg"></div>
+          </div>
+      </button>
+    </div>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link text-gray-300 px-5 active" href="#">
-          <span class="material-icons">store</span>
+        <a class="nav-link px-5 text-gray-300 font-m active" href="#">
+          <span class="material-icons d-inline-block align-text-bottom">store</span>
           Product 
-          <span class="sr-only">(current)</span>
         </a>
-        <a class="nav-link text-gray-300 px-5" href="#">
-          <span class="material-icons">person</span>
+        <a class="nav-link px-5 text-gray-300 font-m" href="#">
+          <span class="material-icons d-inline-block align-text-bottom">person</span>
           log in
         </a>
-        <a class="nav-link text-gray-300 px-5" href="#">
-          <span class="material-icons">favorite</span>
+        <a class="nav-link px-5 text-gray-300 font-m" href="#">
+          <span class="material-icons d-inline-block align-text-bottom">favorite</span>
           Wishlist
         </a>
-        <a class="nav-link text-gray-300 px-5" href="#" tabindex="-1" aria-disabled="true">
-          <span class="material-icons">shopping_cart</span>
+        <a class="nav-link px-5 text-gray-300 font-m" href="#" tabindex="-1" aria-disabled="true">
+          <span class="material-icons d-inline-block align-text-bottom">shopping_cart</span>
           Cart(3)
         </a>
       </div>
