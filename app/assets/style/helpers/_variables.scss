@@ -30,6 +30,7 @@ $theme-colors: (
     // "dark":       $dark,
     "gray-100":   $gray-100, 
     "gray-300":   $gray-300, 
+    "gray-500":   $gray-500, 
     "white":       $white,
     "black":       $black,
 );
@@ -90,6 +91,8 @@ $headings-margin-bottom: 0;
 
 /* navbar */
 $navbar-nav-link-padding-x: 0;
+$navbar-light-color: $gray-300;
+
 
 /* form-control */
 $input-padding-y-lg: 20px;
