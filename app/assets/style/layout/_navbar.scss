@@ -1,9 +1,91 @@
-.navbar__logo{
-    background: url('../images/d’Perfume.png') no-repeat;
-    width: 128px;
-    height: 38px;
-    display: block;
-    text-indent: 101%;
-    white-space: nowrap;
-    overflow: hidden;
+.navbar{
+    padding: 0;
+
+    &__logo{
+        background: url('../images/d’Perfume.png') no-repeat;
+        width: 128px;
+        height: 38px;
+        display: block;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &-toggler{
+        &:focus{
+            outline: none;        
+        }
+    
+        &__wrap{
+            width: 20px;
+            height: 20px;
+        }
+    
+        &__bar{
+            width: 34px;
+            height: 4px;
+            background: $gray-300;
+            transition: transform .6s;
+        }
+    }
+}
+
+.shopping-cart-quantity{
+    position: absolute;
+    top: -4px;
+    right: -10px;
+}
+
+.js-navbar-toggler__close{
+    &--left{
+        @extend .navbar-toggler__bar;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 8px;
+    }
+
+    &--right{
+        @extend .navbar-toggler__bar;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 8px;
+    }
+}
+
+.nav-link{
+    &--bg{
+        background: $gray-500;
+
+        @include media-breakpoint-up(lg){
+            background: none;
+        }
+    }
+
+    &--border{
+        border-bottom: 1px solid $white;
+        @include media-breakpoint-up(lg){
+            border-bottom: none;
+        }
+    }
+}
+
+.navbar-light .navbar-nav .nav-link{
+    &--color{
+        color: $white;
+        @include media-breakpoint-up(lg){
+            color: $navbar-light-color;
+        }
+    }
+
+    &:hover{
+        background: $secondary;
+        color: $white;
+        box-shadow: inset 0 0 10px $primary;
+
+        @include media-breakpoint-up(lg){
+            background: none;
+            color: $primary;
+            box-shadow: none;
+        }
+    }
 }
