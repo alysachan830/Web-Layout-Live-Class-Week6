@@ -30,10 +30,20 @@
     }
 }
 
-.shopping-cart-quantity{
-    position: absolute;
-    top: -4px;
-    right: -10px;
+.shopping-cart{
+
+    &-quantity{
+        position: absolute;
+        top: -4px;
+        right: -10px;
+    }
+
+    &-icon{
+        transition: color .6s;
+        &:hover{
+            color: $primary !important; 
+        }
+    }
 }
 
 .js-navbar-toggler__close{
