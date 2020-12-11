@@ -29,6 +29,7 @@
 // }
 
 /* font-size */
+/* make font-size class */
 
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
@@ -39,6 +40,11 @@
             }
         }
     }
+}
+
+/* get font-size value */
+@function get-font-size($size){
+    @return map-get($font-size, $size);
 }
 
 /* font-weight */
