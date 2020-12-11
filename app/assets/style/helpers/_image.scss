@@ -1,0 +1,13 @@
+.object{
+    &-left{
+        object-position: left;
+    }
+    &-bottom{
+        object-position: bottom;
+    }
+}
+
+/* image filter */
+.filter__brightness-dark{
+    filter: brightness(0.7);
+}

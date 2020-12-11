@@ -1,4 +1,38 @@
 .banner{
-    background: url('../images/index1.jpg') center/cover no-repeat;
-    height: 870px;
+    &-bg{
+        background: url('../images/index1.jpg') center/cover no-repeat;
+    }
+
+    &-h{
+        height: calc(100vh - 56px);
+    }
+}
+
+.custom-btn{
+    font-size: 28px;
+}
+
+.intro__img{
+    height: 350px;
+    width: 100%;
+
+    &--md{
+        @include media-breakpoint-up(md){
+            width: 555px;
+            height: 555px;
+        }
+    }
+
+    &-l{
+        min-height: 680px;
+        &--md{
+            @include media-breakpoint-up(md){
+                min-height: 1080px;
+            }
+        }    
+    }
+}
+
+.article__img{
+    height: 520px;
 }
