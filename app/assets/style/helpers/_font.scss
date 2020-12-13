@@ -36,7 +36,7 @@
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
         @each $size, $value in $font-size{
             .font#{$infix}-#{$size}{
-                font-size: $value;
+                font-size: $value !important;
             }
         }
     }
