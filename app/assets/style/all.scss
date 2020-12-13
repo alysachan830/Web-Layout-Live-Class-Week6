@@ -67,18 +67,17 @@
 @import "../../../node_modules/bootstrap/scss/utilities";
 @import "../../../node_modules/bootstrap/scss/print";
 
-
-/* Mixins */
-@import "mixins/font-size";
-@import "mixins/hover";
-
-/* Base */
-@import "base/base";
-
 /* Helpers */
 @import "helpers/font";
 @import "helpers/border-width";
 @import "helpers/image";
+
+/* Base */
+@import "base/base";
+
+/* Mixins */
+@import "mixins/font-size";
+@import "mixins/hover";
 
 /* Components */
 @import "components/card";
