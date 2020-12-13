@@ -1,0 +1,13 @@
+.custom-pagination{
+    display: flex;
+
+    &__link{
+        font-size: 20px;
+        color: $primary;
+        padding: 2px 12px;
+        
+        &--active{
+            text-decoration: underline;
+        }
+    }
+}
