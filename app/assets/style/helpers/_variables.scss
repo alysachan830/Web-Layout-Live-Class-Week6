@@ -29,6 +29,7 @@ $theme-colors: (
     // "light":      $light,
     // "dark":       $dark,
     "gray-100":   $gray-100, 
+    "gray-200":   $gray-200, 
     "gray-300":   $gray-300, 
     "gray-500":   $gray-500, 
     "white":       $white,
@@ -53,7 +54,9 @@ $font-size: (
 );
 
 /* font-weight */
+$font-weight-medium: 500;
 $font-weight-semibold: 600;
+
 
 /* line-height */
 $headings-line-height: 1.5;
