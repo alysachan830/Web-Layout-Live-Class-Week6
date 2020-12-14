@@ -67,21 +67,22 @@
 @import "../../../node_modules/bootstrap/scss/utilities";
 @import "../../../node_modules/bootstrap/scss/print";
 
+/* Helpers */
+@import "helpers/font";
+@import "helpers/border-width";
+@import "helpers/image";
+@import "helpers/position";
+
+/* Base */
+@import "base/base";
 
 /* Mixins */
 @import "mixins/font-size";
 @import "mixins/hover";
 
-/* Base */
-@import "base/base";
-
-/* Helpers */
-@import "helpers/font";
-@import "helpers/border-width";
-@import "helpers/image";
-
 /* Components */
 @import "components/card";
+@import "components/custom-pagination";
 
 /* Layout */
 @import "layout/navbar";

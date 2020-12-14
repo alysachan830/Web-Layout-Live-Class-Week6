@@ -14,6 +14,10 @@
 
   <%- include('templates/navbar.ejs'); %> 
 
+  <% if (navBrand) { %>
+    <%- include('templates/navBrand.ejs'); %>
+  <% } %>  
+
   <%- contents %>
 
   <% if (subscribe) { %>
