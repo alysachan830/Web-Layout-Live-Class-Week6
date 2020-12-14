@@ -1,15 +1,12 @@
 .card{
-    $this: &;
-
-    &__link:hover{
-        color: inherit;
-        #{$this}__img--hover{
-            transform: translateY(-8px);
-        }
-    }
-
     &__img{
-        transition: transform .4s;
+        transition: all .4s;
+
+        &--s{
+            height: 255px;
+            width: 100%;
+        }
+
         &--m{
             height: 350px;
             width: 100%;
@@ -19,15 +16,30 @@
                 }
             }
         }
+
+        &--hover--translateY{
+            &:hover{
+                transform: translateY(-8px);
+            }
+        }
+
+        &--hover--filter--dark{
+            &:hover{
+                filter: brightness(0.5);
+            }
+        }
     }
 
     &__title{
-        font-size: get-font-size("l");
+        font-size: get-font-size("m");
         font-weight: $font-weight-semibold;
+
+        @include media-breakpoint-up(md){
+            font-size: get-font-size("l");
+        }
     }
 
     &__subtitle{
-        font-size: 16px;
         font-weight: $font-weight-light;
     }
 }

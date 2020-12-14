@@ -1,0 +1,24 @@
+.right-0{
+    right: 0;
+}
+
+
+/* make responsive position-absolute class */
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        .position#{$infix}-absolute{
+            position: absolute !important;
+        }
+    }
+}
+
+/* make responsive position-relative class */
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        .position#{$infix}-relative{
+            position: relative !important;
+        }
+    }
+}
