@@ -1,0 +1,50 @@
+---
+title: Member
+layout: ./app/layout.ejs
+navBrand: true
+subscribe: false
+engine: ejs
+current: index
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <h2>會員中心</h2>
+            <ul>
+                <li>
+                    <a href="#">會員資料修改</a>
+                </li>
+                <li>
+                    <a href="#">訂單查詢</a>
+                </li>
+                <li>
+                    <a href="#">退／換貨申請</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-7">
+            <h2>個人資料修改</h2>
+            <form action="#">
+                <div class="form-group row">
+                    <label for="account" class="col-3 col-form-label text-gray-200">
+                        會員帳號
+                    </label>
+                    <div class="col-9">
+                      <input type="email" class="form-control-plaintext" id="account" value="email@example.com" readonly>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="name" class="col-3 col-form-label text-gray-200">
+                        會員姓名
+                    </label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
