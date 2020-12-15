@@ -1,0 +1,15 @@
+.member-nav__link{
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0px;
+        background: $primary;
+        transition: width 0.3s;
+    }
+
+    &--hover:hover::after,&--active::after{
+        width: 100%;
+    }
+}
+
