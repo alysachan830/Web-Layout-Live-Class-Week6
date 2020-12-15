@@ -3,6 +3,7 @@ $primary:       #916019;
 $secondary:     #AC8A46;
 $white:       #ffffff;
 $black:       #000000;
+$light:       #E0E0E0;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;
 // $info:          $cyan !default;
@@ -26,7 +27,7 @@ $theme-colors: (
     // "info":       $info,
     // "warning":    $warning,
     // "danger":     $danger,
-    // "light":      $light,
+    "light":      $light,
     // "dark":       $dark,
     "gray-100":   $gray-100, 
     "gray-300":   $gray-300, 
