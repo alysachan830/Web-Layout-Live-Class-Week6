@@ -7,23 +7,23 @@ engine: ejs
 current: index
 ---
 
-<div class="container">
+<div class="container py-13 pt-md-18 pb-md-17">
     <div class="row">
-        <div class="col-md-2">
-            <h2 class="font-m text-gray-400 mb-9">會員中心</h2>
-            <ul>
+        <div class="member-nav col-md-2 order-1 order-md-1">
+            <h2 class="font-m text-gray-400 mb-9 d-none d-md-block">會員中心</h2>
+            <ul class="mb-13 mb-md-0 d-flex justify-content-between d-md-block">
                 <li class="mb-8">
-                    <a class="font-weight-medium text-gray-400" href="#">會員資料修改</a>
+                    <a class="font-weight-medium text-gray-400 d-inline-block member-nav__link member-nav__link--active member-nav__link--hover" href="#">會員資料修改</a>
                 </li>
                 <li class="mb-8">
-                    <a class="font-weight-medium text-gray-400" href="#">訂單查詢</a>
+                    <a class="font-weight-medium text-gray-400 d-inline-block member-nav__link member-nav__link--hover" href="#">訂單查詢</a>
                 </li>
                 <li class="mb-8">
-                    <a class="font-weight-medium text-gray-400" href="#">退／換貨申請</a>
+                    <a class="font-weight-medium text-gray-400 d-inline-block member-nav__link member-nav__link--hover" href="#">退／換貨申請</a>
                 </li>
             </ul>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 order-3 order-md-2">
             <h2 class="border-bottom pb-2 mb-5">個人資料修改</h2>
             <form class="mb-14" action="#">
                 <div class="form-group row mb-7">
@@ -80,7 +80,7 @@ current: index
                     </label>
                     <div class="col-9">
                         <div class="form-row mb-2">
-                            <div class="col-5">
+                            <div class="col-8 col-md-5">
                                 <select class="form-control border-gray-100 text-gray-200" id="contactAddress">
                                     <option value="Taiwan" selected>台灣及離島</option>
                                     <option value="US">美國</option>
@@ -89,14 +89,14 @@ current: index
                             </div>
                         </div>
                         <div class="form-row mb-2">
-                            <div class="col-5">
+                            <div class="col-4  col-md-5">
                                 <select class="form-control border-gray-100 text-gray-200" id="contactAddress">
                                     <option value="Kaohsiung" selected>高雄市</option>
                                     <option value="Taipei">台北市</option>
                                     <option value="Taichung">台中市</option>
                                 </select>
                             </div>
-                            <div class="col-5">
+                            <div class="col-4  col-md-5">
                                 <select class="form-control border-gray-100 text-gray-200" id="contactAddress">
                                     <option value="Yancheng District" selected>鹽埕區</option>
                                     <option value="Sanmin District">三民區</option>
@@ -121,7 +121,7 @@ current: index
                     </label>
                     <div class="col-9">
                         <div class="form-row mb-2">
-                            <div class="col-5">
+                            <div class="col-8 col-md-5">
                                 <select class="form-control border-gray-100 text-gray-200" id="deliveryAddress">
                                     <option value="Taiwan" selected>台灣及離島</option>
                                     <option value="US">美國</option>
@@ -130,14 +130,14 @@ current: index
                             </div>
                         </div>
                         <div class="form-row mb-2">
-                            <div class="col-5">
+                            <div class="col-4 col-md-5">
                                 <select class="form-control border-gray-100 text-gray-200" id="deliveryAddress">
                                     <option value="Kaohsiung" selected>高雄市</option>
                                     <option value="Taipei">台北市</option>
                                     <option value="Taichung">台中市</option>
                                 </select>
                             </div>
-                            <div class="col-5">
+                            <div class="col-4 col-md-5">
                                 <select class="form-control border-gray-100 text-gray-200" id="deliveryAddress">
                                     <option value="Yancheng District" selected>鹽埕區</option>
                                     <option value="Sanmin District">三民區</option>
@@ -149,7 +149,7 @@ current: index
                             <input type="text" class="form-control border-gray-100 text-gray-200" id="deliveryAddress" placeholder="請輸入地址">
                         </div>
                         <div class="form-row">
-                            <div class="col-5">
+                            <div class="col-8 col-md-5">
                                 <input class="btn btn-primary w-100" type="submit" value="確定修改">
                             </div>
                         </div>
@@ -187,7 +187,7 @@ current: index
                     <div class="col-9">
                         <input type="password" class="form-control border-gray-100 mb-5" id="confirmPassword" required>
                         <div class="form-row">
-                            <div class="col-5">
+                            <div class="col-8 col-md-5">
                                 <input class="btn btn-primary w-100" type="submit" value="變更密碼">
                             </div>
                         </div>  
@@ -195,7 +195,7 @@ current: index
                 </div>              
             </form>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 order-2 order-md-3 mb-13 mb-md-0">
             <h2 class="d-flex align-items-center text-gray-200 mb-9">
                 <span class="material-icons align-bottom text-black mr-1">person</span>
                 會員編碼
