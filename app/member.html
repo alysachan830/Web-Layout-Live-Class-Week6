@@ -75,13 +75,13 @@ current: index
                 </div>
 
                 <div class="form-group row mb-7">
-                    <label for="contactAddress" class="col-3 col-form-label text-gray-200">
+                    <label for="contact-address-country" class="col-3 col-form-label text-gray-200">
                         聯絡地址
                     </label>
                     <div class="col-9">
                         <div class="form-row mb-2">
                             <div class="col-8 col-md-5">
-                                <select class="form-control border-gray-100 text-gray-200" id="contactAddress">
+                                <select class="form-control border-gray-100 text-gray-200" id="contact-address-country">
                                     <option value="Taiwan" selected>台灣及離島</option>
                                     <option value="US">美國</option>
                                     <option value="UK">英國</option>
@@ -90,14 +90,14 @@ current: index
                         </div>
                         <div class="form-row mb-2">
                             <div class="col-4  col-md-5">
-                                <select class="form-control border-gray-100 text-gray-200" id="contactAddress">
+                                <select class="form-control border-gray-100 text-gray-200" id="contact-address-city">
                                     <option value="Kaohsiung" selected>高雄市</option>
                                     <option value="Taipei">台北市</option>
                                     <option value="Taichung">台中市</option>
                                 </select>
                             </div>
                             <div class="col-4  col-md-5">
-                                <select class="form-control border-gray-100 text-gray-200" id="contactAddress">
+                                <select class="form-control border-gray-100 text-gray-200" id="contact-address-district">
                                     <option value="Yancheng District" selected>鹽埕區</option>
                                     <option value="Sanmin District">三民區</option>
                                     <option value="Cianjhen District">前鎮區</option>
@@ -116,13 +116,13 @@ current: index
                 </div>
 
                 <div class="form-group row mb-7">
-                    <label for="deliveryAddress" class="col-3 col-form-label text-gray-200">
+                    <label for="delivery-address-country" class="col-3 col-form-label text-gray-200">
                         配送地址
                     </label>
                     <div class="col-9">
                         <div class="form-row mb-2">
                             <div class="col-8 col-md-5">
-                                <select class="form-control border-gray-100 text-gray-200" id="deliveryAddress">
+                                <select class="form-control border-gray-100 text-gray-200" id="delivery-address-country">
                                     <option value="Taiwan" selected>台灣及離島</option>
                                     <option value="US">美國</option>
                                     <option value="UK">英國</option>
@@ -131,14 +131,14 @@ current: index
                         </div>
                         <div class="form-row mb-2">
                             <div class="col-4 col-md-5">
-                                <select class="form-control border-gray-100 text-gray-200" id="deliveryAddress">
+                                <select class="form-control border-gray-100 text-gray-200" id="delivery-address-city">
                                     <option value="Kaohsiung" selected>高雄市</option>
                                     <option value="Taipei">台北市</option>
                                     <option value="Taichung">台中市</option>
                                 </select>
                             </div>
                             <div class="col-4 col-md-5">
-                                <select class="form-control border-gray-100 text-gray-200" id="deliveryAddress">
+                                <select class="form-control border-gray-100 text-gray-200" id="delivery-address-district">
                                     <option value="Yancheng District" selected>鹽埕區</option>
                                     <option value="Sanmin District">三民區</option>
                                     <option value="Cianjhen District">前鎮區</option>
@@ -167,7 +167,7 @@ current: index
                         舊密碼
                     </label>
                     <div class="col-9">
-                      <input type="password" class="form-control border-gray-100" id="oldPassword" required>
+                      <input type="password" class="form-control border-gray-100" id="oldPassword" autocomplete="on" required>
                     </div>
                 </div>
 
@@ -176,7 +176,7 @@ current: index
                         新密碼
                     </label>
                     <div class="col-9">
-                      <input type="password" class="form-control border-gray-100" id="newPassword" required>
+                      <input type="password" class="form-control border-gray-100" id="newPassword" autocomplete="on" required>
                     </div>
                 </div>
 
@@ -185,7 +185,7 @@ current: index
                         確認密碼
                     </label>
                     <div class="col-9">
-                        <input type="password" class="form-control border-gray-100 mb-5" id="confirmPassword" required>
+                        <input type="password" class="form-control border-gray-100 mb-5" id="confirmPassword" autocomplete="on" required>
                         <div class="form-row">
                             <div class="col-8 col-md-5">
                                 <input class="btn btn-primary w-100" type="submit" value="變更密碼">
