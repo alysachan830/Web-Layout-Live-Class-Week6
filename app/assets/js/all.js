@@ -3,12 +3,12 @@ $(document).ready(() => {
   $(document).on('scroll', () => {
     if($(document).scrollTop() > 0){
       $('.js-navbar').addClass('shadow-sm');
-      $('.js-navbar').addClass('fixed-top');
+      $('.js-navbar').addClass('sticky-top');
     }
 
     else{
       $('.js-navbar').removeClass('shadow-sm');
-      $('.js-navbar').removeClass('fixed-top');
+      $('.js-navbar').removeClass('sticky-top');
     }
 
   })
