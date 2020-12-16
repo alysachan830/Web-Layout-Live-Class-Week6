@@ -3,33 +3,22 @@ $primary:       #916019;
 $secondary:     #AC8A46;
 $white:       #ffffff;
 $black:       #000000;
-// $secondary:     $gray-600 !default;
-// $success:       $green !default;
-// $info:          $cyan !default;
-// $warning:       $yellow !default;
-// $danger:        $red !default;
-// $light:         $gray-100 !default;
-// $dark:          $gray-800 !default;
+$light:       #E0E0E0;
 
 
-$gray-100: #E0E0E0 !default;
+$gray-100: #CED4DA !default;
 $gray-200: #818A91 !default;
 $gray-300: #8D8D8D !default;
 $gray-400: #848484 !default;
 $gray-500: #707070 !default;
 
-// $theme-colors: () !default;
 $theme-colors: (
     "primary":    $primary,
-    // "secondary":  $secondary,
-    // "success":    $success,
-    // "info":       $info,
-    // "warning":    $warning,
-    // "danger":     $danger,
-    // "light":      $light,
-    // "dark":       $dark,
+    "light":      $light,
     "gray-100":   $gray-100, 
+    "gray-200":   $gray-200, 
     "gray-300":   $gray-300, 
+    "gray-400":   $gray-400, 
     "gray-500":   $gray-500, 
     "white":       $white,
     "black":       $black,
@@ -53,7 +42,9 @@ $font-size: (
 );
 
 /* font-weight */
+$font-weight-medium: 500;
 $font-weight-semibold: 600;
+
 
 /* line-height */
 $headings-line-height: 1.5;

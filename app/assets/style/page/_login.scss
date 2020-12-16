@@ -1,0 +1,16 @@
+.login{
+    padding-bottom: 106px;
+
+    &__img{
+        height: 220px;
+        width: 100%;
+    
+        @include media-breakpoint-up(md){
+            height: 730px;
+        }
+    }
+
+    &__input{
+        border-color: #CED4DA;
+    }
+}

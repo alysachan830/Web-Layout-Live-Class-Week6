@@ -3,8 +3,13 @@
         transition: all .4s;
 
         &--s{
-            height: 255px;
+            height: 165px;
             width: 100%;
+            &--md{
+                @include media-breakpoint-up(md){
+                    min-height: 255px;
+                }                
+            }
         }
 
         &--m{

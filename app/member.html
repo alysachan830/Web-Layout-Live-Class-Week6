@@ -1,0 +1,248 @@
+---
+title: Member
+layout: ./app/layout.ejs
+navBrand: true
+subscribe: false
+engine: ejs
+current: index
+---
+
+<div class="container py-13 pt-md-18 pb-md-17">
+    <div class="row">
+        <div class="member-nav col-md-2 order-1 order-md-1" data-aos="fade-down">
+            <h2 class="font-m text-gray-400 mb-9 d-none d-md-block">會員中心</h2>
+            <ul class="mb-13 mb-md-0 d-flex justify-content-between d-md-block">
+                <li class="mb-8">
+                    <a class="font-weight-medium text-gray-400 d-inline-block member-nav__link member-nav__link--active member-nav__link--hover" href="#">會員資料修改</a>
+                </li>
+                <li class="mb-8">
+                    <a class="font-weight-medium text-gray-400 d-inline-block member-nav__link member-nav__link--hover" href="#">訂單查詢</a>
+                </li>
+                <li class="mb-8">
+                    <a class="font-weight-medium text-gray-400 d-inline-block member-nav__link member-nav__link--hover" href="#">退／換貨申請</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-7 order-3 order-md-2" data-aos="fade-down" data-aos-delay="50">
+            <h2 class="border-bottom pb-2 mb-5">個人資料修改</h2>
+            <form class="mb-14" action="#">
+                <div class="form-group row mb-7">
+                    <label for="account" class="col-3 col-form-label text-gray-200">
+                        會員帳號
+                    </label>
+                    <div class="col-9">
+                      <input type="email" class="form-control-plaintext text-gray-200" id="account" value="email@example.com" readonly>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-7">
+                    <label for="name" class="col-3 col-form-label text-gray-200">
+                        會員姓名
+                    </label>
+                    <div class="col-9">
+                      <input type="text" class="form-control border-gray-100 text-gray-200" id="name">
+                    </div>
+                </div>
+
+                <div class="form-group row mb-7">
+                    <label for="gender" class="col-3 col-form-label text-gray-200">
+                        會員性別
+                    </label>
+                    <div class="col-9">
+                        <select class="form-control border-gray-100 w-auto text-gray-200" id="gender">
+                            <option value="woman" selected>女</option>
+                            <option value="man">男</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-7">
+                    <label for="email" class="col-3 col-form-label text-gray-200">
+                        電子信箱
+                    </label>
+                    <div class="col-9">
+                      <input type="email" class="form-control border-gray-100 text-gray-200" id="email" value="email@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group row mb-7">
+                    <label for="tel" class="col-3 col-form-label text-gray-200">
+                        手機號碼
+                    </label>
+                    <div class="col-9">
+                      <input type="tel" class="form-control border-gray-100 text-gray-200" id="tel">
+                    </div>
+                </div>
+
+                <div class="form-group row mb-7">
+                    <label for="contact-address-country" class="col-3 col-form-label text-gray-200">
+                        聯絡地址
+                    </label>
+                    <div class="col-9">
+                        <div class="form-row mb-2">
+                            <div class="col-8 col-md-5">
+                                <select class="form-control border-gray-100 text-gray-200" id="contact-address-country">
+                                    <option value="Taiwan" selected>台灣及離島</option>
+                                    <option value="US">美國</option>
+                                    <option value="UK">英國</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row mb-2">
+                            <div class="col-4  col-md-5">
+                                <select class="form-control border-gray-100 text-gray-200" id="contact-address-city">
+                                    <option value="Kaohsiung" selected>高雄市</option>
+                                    <option value="Taipei">台北市</option>
+                                    <option value="Taichung">台中市</option>
+                                </select>
+                            </div>
+                            <div class="col-4  col-md-5">
+                                <select class="form-control border-gray-100 text-gray-200" id="contact-address-district">
+                                    <option value="Yancheng District" selected>鹽埕區</option>
+                                    <option value="Sanmin District">三民區</option>
+                                    <option value="Cianjhen District">前鎮區</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- 這個input是否需要用.form-group包住？ -->
+                        <input type="text" class="form-control border-gray-100 text-gray-200 mb-3" id="contactAddress" placeholder="請輸入地址">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="receiveNewsCheck">
+                            <label class="custom-control-label text-gray-200" for="receiveNewsCheck">我願意收到最新優惠情報</label>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="form-group row mb-7">
+                    <label for="delivery-address-country" class="col-3 col-form-label text-gray-200">
+                        配送地址
+                    </label>
+                    <div class="col-9">
+                        <div class="form-row mb-2">
+                            <div class="col-8 col-md-5">
+                                <select class="form-control border-gray-100 text-gray-200" id="delivery-address-country">
+                                    <option value="Taiwan" selected>台灣及離島</option>
+                                    <option value="US">美國</option>
+                                    <option value="UK">英國</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row mb-2">
+                            <div class="col-4 col-md-5">
+                                <select class="form-control border-gray-100 text-gray-200" id="delivery-address-city">
+                                    <option value="Kaohsiung" selected>高雄市</option>
+                                    <option value="Taipei">台北市</option>
+                                    <option value="Taichung">台中市</option>
+                                </select>
+                            </div>
+                            <div class="col-4 col-md-5">
+                                <select class="form-control border-gray-100 text-gray-200" id="delivery-address-district">
+                                    <option value="Yancheng District" selected>鹽埕區</option>
+                                    <option value="Sanmin District">三民區</option>
+                                    <option value="Cianjhen District">前鎮區</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- 這個input是否需要用.form-group包住？ -->
+                        <input type="text" class="form-control border-gray-100 text-gray-200 mb-5" id="deliveryAddress" placeholder="請輸入地址">
+                        <div class="form-row">
+                            <div class="col-8 col-md-5">
+                                <input class="btn btn-primary w-100" type="submit" value="確定修改">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+            </form>
+
+            <h2 class="border-bottom pb-2 mb-5">修改密碼</h2>            
+            <form action="#">
+                <div class="form-group row mb-7">
+                    <label for="oldPassword" class="col-3 col-form-label text-gray-200">
+                        舊密碼
+                    </label>
+                    <div class="col-9">
+                      <input type="password" class="form-control border-gray-100" id="oldPassword" autocomplete="on" required>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-7">
+                    <label for="newPassword" class="col-3 col-form-label text-gray-200">
+                        新密碼
+                    </label>
+                    <div class="col-9">
+                      <input type="password" class="form-control border-gray-100" id="newPassword" autocomplete="on" required>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-7">
+                    <label for="confirmPassword" class="col-3 col-form-label text-gray-200">
+                        確認密碼
+                    </label>
+                    <div class="col-9">
+                        <input type="password" class="form-control border-gray-100 mb-5" id="confirmPassword" autocomplete="on" required>
+                        <div class="form-row">
+                            <div class="col-8 col-md-5">
+                                <input class="btn btn-primary w-100" type="submit" value="變更密碼">
+                            </div>
+                        </div>  
+                    </div>
+                </div>              
+            </form>
+        </div>
+        <div class="col-md-3 order-2 order-md-3 mb-13 mb-md-0" data-aos="fade-down" data-aos-delay="100">
+            <h2 class="d-flex align-items-center text-gray-200 mb-9">
+                <span class="material-icons align-bottom text-black mr-1">person</span>
+                會員編碼
+                <span class="font-m ml-2 text-gray-200 font-weight-medium">T00020080615</span>
+            </h2>
+
+            <ul>
+                <li class="row mb-5">
+                    <span class="col-4 text-gray-200">
+                        購物車
+                    </span>
+                    <span class="col-8 text-gray-200">
+                        56
+                    </span>
+                </li>
+                <li class="row mb-5">
+                    <span class="col-4 text-gray-200">
+                        我的收藏
+                    </span>
+                    <span class="col-8 text-gray-200">
+                        23
+                    </span>
+                </li>
+                <li class="row mb-5">
+                    <span class="col-4 text-gray-200">
+                        完成訂單
+                    </span>
+                    <span class="col-8 text-gray-200">
+                        8
+                    </span>
+                </li>
+                <li class="row mb-5">
+                    <span class="col-4 text-gray-200">
+                        會員紅利
+                    </span>
+                    <span class="col-8 text-gray-200">
+                        2680
+                    </span>
+                </li>
+                <li class="row">
+                    <span class="col-4 text-gray-200">
+                        邀請碼
+                    </span>
+                    <span class="col-8 text-gray-200">
+                        TK2075
+                    </span>
+                </li>
+            </ul>
+            <span class="font-s text-gray-200">新戶輸入邀請碼即可獲贈紅利點數1000點</span>
+        </div>
+    </div>
+</div>

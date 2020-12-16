@@ -7,8 +7,8 @@ engine: ejs
 current: index
 ---
 
-<div class="banner-bg banner-h mb-13 mb-md-17 d-flex align-items-center">
-  <div class="container">
+<div class="banner-bg banner-h mb-13 mb-md-17 d-flex align-items-center" data-aos="fade-up">
+  <div class="container" data-aos="fade-up" data-aos-delay="50">
     <div class="row">
       <div class="mb-5 col-md-5 offset-md-7">
         <h2 class="text-white font-xl font-md-xxl font-weight-bold">Perfume your day</h2>
@@ -22,7 +22,8 @@ current: index
 </div>
 
 <ul class="container">
-  <li class="row mb-11 mb-md-0 no-gutters flex-md-row-reverse align-items-center">
+  <!-- 以下這行如果用data-aos="fade-up" 或  data-aos="fade-down" ，navbar在手機版並向下滾時，都會一直正常地貼在螢幕上方-->
+  <li class="row mb-11 mb-md-0 no-gutters flex-md-row-reverse align-items-center" data-aos="fade-right">
     <div class="col-md-6 mb-2 mb-md-0">
       <img class="intro__img intro__img--md" src="./assets/images/index2.jpg" alt="product">      
     </div>
@@ -37,7 +38,8 @@ current: index
     </div>
   </li>
 
-  <li class="row mb-11 mb-md-0 no-gutters align-items-center">
+  <!-- 以下這行如果用data-aos="fade-up" 或  data-aos="fade-down" ，navbar在手機版並向下滾時，都會一直正常地貼在螢幕上方-->
+  <li class="row mb-11 mb-md-0 no-gutters align-items-center" data-aos="fade-left">
     <div class="col-md-6 mb-2 mb-md-0">
       <img class="intro__img intro__img--md" src="./assets/images/index3.png" alt="product">      
     </div>
@@ -52,7 +54,8 @@ current: index
     </div>
   </li>
   
-  <li class="row mb-11 mb-md-0 no-gutters flex-md-row-reverse align-items-center">
+  <!-- 以下這行如果用data-aos="fade-up" 或  data-aos="fade-down" ，navbar在手機版並向下滾時，都會一直正常地貼在螢幕上方-->
+  <li class="row mb-11 mb-md-0 no-gutters flex-md-row-reverse align-items-center" data-aos="fade-right"> 
     <div class="col-md-6 mb-2 mb-md-0">
       <img class="intro__img intro__img--md object-left" src="./assets/images/index4.jpg" alt="product">      
     </div>
@@ -67,7 +70,8 @@ current: index
     </div>
   </li>
   
-  <li class="row mb-13 mb-md-17 no-gutters align-items-center">
+  <!-- 以下這行如果用data-aos="fade-up" 或  data-aos="fade-down" ，navbar在手機版並向下滾時，都會一直正常地貼在螢幕上方-->
+  <li class="row mb-13 mb-md-17 no-gutters align-items-center" data-aos="fade-left">
     <div class="col-md-6 mb-2 mb-md-0">
       <img class="intro__img-l intro__img-l--md" src="./assets/images/index5.jpg" alt="product">      
     </div>
@@ -98,10 +102,10 @@ current: index
   </li>
 </ul>
 
-<div class="bg-gray-100 py-11 py-md-13">
+<div class="bg-light py-11 py-md-13">
   <div class="container">
     <ul class="row">
-      <li class="col-md-4 mb-11 mb-md-0">
+      <li class="col-md-4 mb-11 mb-md-0" data-aos="fade-up">
         <div class="card">
             <a href="#">
               <img class="card__img card__img--m card__img--m--md card__img--hover--translateY mb-2 object-bottom" src="./assets/images/index6.jpg" alt="Poppy & Barley">
@@ -115,7 +119,7 @@ current: index
         </div>
       </li>
 
-      <li class="col-md-4 mb-11 mb-md-0">
+      <li class="col-md-4 mb-11 mb-md-0" data-aos="fade-up" data-aos-delay="100">
         <div class="card">
             <a href="#">
               <img class="card__img card__img--m card__img--m--md card__img--hover--translateY mb-2 object-bottom" src="./assets/images/index7.jpg" alt="Body Wash">
@@ -128,7 +132,7 @@ current: index
         </div>
       </li>
 
-      <li class="col-md-4">
+      <li class="col-md-4" data-aos="fade-up" data-aos-delay="200">
         <div class="card">
           <a class="mb-2 d-flex justify-content-center align-items-center" href="#">
             <img class="card__img card__img--m card__img--m--md card__img--hover--translateY filter__brightness-dark" src="./assets/images/index8.jpg" alt="Apple Cider Vinegar Capsule">
@@ -145,7 +149,7 @@ current: index
   </div>
 </div>
 
-<div class="container py-13 py-md-17">
+<div class="container py-13 py-md-17" data-aos="fade-up">
   <div class="row align-items-center">
     <div class="col-md-8 mb-2 mb-md-0">
       <img class="article__img" src="./assets/images/index9.jpg" alt="product">

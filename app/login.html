@@ -1,0 +1,45 @@
+---
+title: Login
+layout: ./app/layout.ejs
+navBrand: true
+subscribe: false
+engine: ejs
+current: index
+---
+
+<div class="login container pt-13 py-md-18">
+    <div class="row align-items-center">
+        <div class="col-md-8 mb-9 mb-md-0" data-aos="fade-down">
+            <img class="login__img" src="./assets/images/login1.jpg" alt="product">
+        </div>
+        <div class="col-md-4" data-aos="fade-down" data-aos-delay="50">
+            <h2 class="mb-3 font-xl font-weight-bold">Log in</h2>
+            <form class="needs-validation" action="#" novalidate>
+                <div class="form-group mb-7">
+                    <label for="account">帳號</label>
+                    <input type="text" class="login__input form-control text-gray-200" id="account" placeholder="email@example.com" required>
+                    <!-- Input invalid feedback -->
+                    <div class="invalid-feedback">
+                        請輸入帳號！
+                    </div>
+                </div>
+                <div class="form-group mb-12">
+                    <label for="password">密碼</label>
+                    <input type="password" class="login__input form-control text-gray-200" id="password" placeholder="Password" autocomplete="on" required>
+                    <!-- Input invalid feedback -->
+                    <div class="invalid-feedback">
+                        請輸入密碼！
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-between">
+                    <a class="text-primary font-weight-medium" href="#">忘記密碼</a>
+                    <div>
+                        <input type="submit" class="btn btn-outline-primary mr-2" value="註冊">
+                        <a class="btn btn-primary" href="./member.html">登入</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
