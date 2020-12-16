@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CHANEL</title>
+  <title>Login</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
@@ -84,68 +84,39 @@
     
 
   
-<div class="container py-13 pt-md-18 pb-md-17">
-    <div class="row position-md-relative">
-        <div class="col-md-8 mb-9 mb-md-10" data-aos="fade-down">
-            <img src="./assets/images/product1.jpg" alt="CHANEL">
+<div class="login container pt-13 py-md-18">
+    <div class="row align-items-center">
+        <div class="col-md-8 mb-9 mb-md-0" data-aos="fade-down">
+            <img class="login__img" src="./assets/images/login1.jpg" alt="product">
         </div>
-        <div class="col-md-4 position-md-absolute right-0 mb-13 mb-md-0" data-aos="fade-down" data-aos-delay="100">
-            <h2 class="font-xl font-weight-bold">CHANEL N°5</h2>
-            <p class="mb-11">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
-            <span class="mb-3 font-m font-weight-light">NT$4,980</span>
-            <div class="input-group mb-2">
-                <input type="number" class="form-control form-control-lg border-primary" placeholder="1" aria-label="1" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <!-- Trigger shopping cart modal -->
-                    <button class="btn btn-primary px-16" type="button" data-toggle="modal" data-target="#shoppingCartModal">加入購物車</button>
+        <div class="col-md-4" data-aos="fade-down" data-aos-delay="50">
+            <h2 class="mb-3 font-xl font-weight-bold">Log in</h2>
+            <form class="needs-validation" action="#" novalidate>
+                <div class="form-group mb-7">
+                    <label for="account">帳號</label>
+                    <input type="text" class="login__input form-control text-gray-200" id="account" placeholder="email@example.com" required>
+                    <!-- Input invalid feedback -->
+                    <div class="invalid-feedback">
+                        請輸入帳號！
+                    </div>
                 </div>
-            </div>
-            <!-- Trigger favorite modal -->
-            <a href="#" class="d-flex mb-13 mb-md-18" data-toggle="modal" data-target="#favoriteModal">
-                <span class="material-icons text-primary hover__text--dark">favorite</span>
-                <span>加入我的收藏</span>
-            </a>
-            
-            <h3 class="mb-8">商品購買須知</h3>
-            <p class="mb-7">產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</p>
-            <h3 class="mb-8">退換貨須知</h3>
-            <p>依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</p>
-        </div>
-
-        <div class="col-md-8" data-aos="fade-down" data-aos-delay="50">
-            <div class="row mb-5 mb-md-10">
-                <div class="col-md-6 mb-5 mb-md-0">
-                    <img src="./assets/images/product2.jpg" alt="CHANEL">
+                <div class="form-group mb-12">
+                    <label for="password">密碼</label>
+                    <input type="password" class="login__input form-control text-gray-200" id="password" placeholder="Password" autocomplete="on" required>
+                    <!-- Input invalid feedback -->
+                    <div class="invalid-feedback">
+                        請輸入密碼！
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./assets/images/product3.jpg" alt="CHANEL">
+                
+                <div class="d-flex justify-content-between">
+                    <a class="text-primary font-weight-medium" href="#">忘記密碼</a>
+                    <div>
+                        <input type="submit" class="btn btn-outline-primary mr-2" value="註冊">
+                        <a class="btn btn-primary" href="./member.html">登入</a>
+                    </div>
                 </div>
-            </div>
-            <img src="./assets/images/product1.jpg" alt="CHANEL">
-        </div>
-    </div>
-
-
-
-    <!-- Shopping cart modal -->
-    <div class="modal fade" id="shoppingCartModal" tabindex="-1" role="dialog" aria-labelledby="shoppingCartModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-50 mx-auto" role="document">
-            <div class="modal-content">
-            <div class="modal-body font-weight-semibold text-center text-primary">
-                已加入購物車
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Favorite modal -->
-    <div class="modal fade" id="favoriteModal" tabindex="-1" role="dialog" aria-labelledby="favoriteModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered w-50 mx-auto" role="document">
-            <div class="modal-content">
-            <div class="modal-body font-weight-semibold text-center text-primary">
-                已加入我的收藏
-            </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>
